@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>图书管理</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.main{
+			/*border: solid red 1px;*/
+			height: 300px;
+			width: 500px;
+			background-color: #99bbff;
+			margin-top: 250px;
+			margin-left: 250px;
+		}
+	</style>
+</head>
+<body>
+<div class="main">
+	<form action="./edit.php?id=<?php echo $arr['id']?>" method="post" style="margin-top: 100px;margin-left: 100px;">
+		<br>
+		<h3>修改图书信息</h3>
+		<p>图书号码：<input type="text" name="number" id="" value="<?php echo $arr['number']?> "></p>
+		<p>图书名称：<input type="text" name="name" value="<?php echo $arr['name']?>"></p>
+		<p>图书号价格：<input type="text" name="price" value="<?php echo $arr['price']?>"></p>
+		<p>图书出版社：<input type="text" name="publish" value="<?php echo $arr['publish']?>"></p>
+		<p><input type="submit" name="" value="修改信息"></p>
+	</form>
+</div>
+</body>
+</html>
